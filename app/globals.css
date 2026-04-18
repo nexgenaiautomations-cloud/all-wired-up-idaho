@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — pulled from the actual hoodie */
+  --color-brand: #2e4a6b;       /* brand navy (slightly darker than hoodie for better contrast) */
+  --color-brand-dark: #243d59;  /* darker shade for navbar/footer */
+  --color-brand-light: #3a5878; /* lighter shade */
+  --color-brand-50: #f0f4f8;    /* very light tint for page backgrounds */
+  --color-brand-100: #d8e3ed;   /* light tint for cards */
+  --color-cream: #d4c9a8;       /* warm cream (logo ink color on hoodie) */
+  --color-cream-dark: #b8ae90;
+  --color-yellow: #f5c800;      /* electric yellow (CTA accent) */
+  --color-yellow-dark: #d4ac00;
+
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #0f172a;
+    background: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+  }
+}
