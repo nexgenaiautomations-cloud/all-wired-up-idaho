@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get a free electrical estimate from All Wired Up Idaho. Serving Wood River Valley — call 208-421-2123 or fill out our contact form.",
+    "Get a free electrical estimate from All Wired Up Idaho. Serving Wood River Valley and Magic Valley, Idaho — call 208-421-2123 or fill out our contact form.",
 };
 
 const contactInfo = [
@@ -18,13 +18,13 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@allwiredupidaho.com",
-    href: "mailto:info@allwiredupidaho.com",
+    value: "allwiredupidaho@gmail.com",
+    href: "mailto:allwiredupidaho@gmail.com",
   },
   {
     icon: MapPin,
     label: "Service Area",
-    value: "Wood River Valley, Idaho\nSun Valley · Ketchum · Hailey · Bellevue",
+    value: "Wood River Valley & Magic Valley, Idaho",
     href: null,
   },
   {
@@ -115,21 +115,19 @@ export default function ContactPage() {
                 <h3 className="font-heading font-bold text-[#2e4a6b] mb-3">
                   Service Area
                 </h3>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Wood River Valley</p>
+                <div className="grid grid-cols-2 gap-2 mb-4">
+                  {["Sun Valley","Ketchum","Hailey","Bellevue","Carey","Picabo","Fairfield","Blaine County"].map((area) => (
+                    <div key={area} className="flex items-center gap-1.5 text-xs text-slate-700">
+                      <div className="w-1.5 h-1.5 bg-[#d4a800] rounded-full shrink-0" />
+                      {area}
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Magic Valley</p>
                 <div className="grid grid-cols-2 gap-2">
-                  {[
-                    "Sun Valley",
-                    "Ketchum",
-                    "Hailey",
-                    "Bellevue",
-                    "Carey",
-                    "Picabo",
-                    "Fairfield",
-                    "Blaine County",
-                  ].map((area) => (
-                    <div
-                      key={area}
-                      className="flex items-center gap-1.5 text-xs text-slate-700"
-                    >
+                  {["Twin Falls","Jerome","Burley","Rupert","Gooding","Shoshone","Wendell","Filer","Kimberly","Twin Falls County"].map((area) => (
+                    <div key={area} className="flex items-center gap-1.5 text-xs text-slate-700">
                       <div className="w-1.5 h-1.5 bg-[#d4a800] rounded-full shrink-0" />
                       {area}
                     </div>

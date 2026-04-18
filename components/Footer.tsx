@@ -11,8 +11,8 @@ export function Footer() {
           <div>
             <Logo variant="dark" className="h-16 w-auto mb-4" />
             <p className="text-sm text-[#d4c9a8]/80 leading-relaxed">
-              Licensed electrical contractors serving Wood River Valley since
-              1998. Quality workmanship, local roots, community trust.
+              Licensed electrical contractors serving Wood River Valley and
+              Magic Valley, Idaho. Quality workmanship, local roots, community trust.
             </p>
           </div>
 
@@ -57,19 +57,19 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@allwiredupidaho.com"
+                  href="mailto:allwiredupidaho@gmail.com"
                   className="flex items-center gap-3 text-[#d4c9a8]/80 hover:text-[#d4a800] text-sm transition-colors duration-200 cursor-pointer"
                 >
                   <Mail size={16} className="shrink-0 text-[#d4a800]" />
-                  <span>info@allwiredupidaho.com</span>
+                  <span>allwiredupidaho@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-[#d4c9a8]/80 text-sm">
                 <MapPin size={16} className="shrink-0 mt-0.5 text-[#d4a800]" />
                 <span>
-                  Wood River Valley, Idaho
+                  Wood River Valley &amp; Magic Valley
                   <br />
-                  Sun Valley · Ketchum · Hailey · Bellevue
+                  Sun Valley · Ketchum · Twin Falls · Jerome
                 </span>
               </li>
               <li className="flex items-start gap-3 text-[#d4c9a8]/80 text-sm">
@@ -89,7 +89,7 @@ export function Footer() {
             © {new Date().getFullYear()} All Wired Up Idaho. All rights reserved.
           </p>
           <p className="text-xs text-[#d4c9a8]/60">
-            Licensed & Insured · Wood River Valley, ID
+            Licensed & Insured · Wood River Valley &amp; Magic Valley, ID
           </p>
         </div>
       </div>
