@@ -18,12 +18,12 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-[#2e4a6b] shadow-lg">
+    <header className="sticky top-0 z-50 bg-[#1a2e45] shadow-lg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo — cream colored on the brand slate blue */}
           <Link href="/" className="flex-shrink-0 py-1" onClick={() => setOpen(false)}>
-            <Logo variant="nav" className="h-14 w-auto" />
+            <Logo variant="dark" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop nav */}
@@ -34,8 +34,8 @@ export function Navbar() {
                 href={link.href}
                 className={`font-heading text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer ${
                   pathname === link.href
-                    ? "text-[#f5c800]"
-                    : "text-[#d4c9a8] hover:text-[#f5c800]"
+                    ? "text-[#d4a800]"
+                    : "text-[#d4c9a8] hover:text-[#d4a800]"
                 }`}
               >
                 {link.label}
@@ -46,7 +46,7 @@ export function Navbar() {
           {/* CTA: Click-to-call */}
           <a
             href="tel:+12084212123"
-            className="hidden md:flex items-center gap-2 bg-[#f5c800] hover:bg-[#d4ac00] text-[#2e4a6b] font-heading font-bold text-sm uppercase tracking-wide px-4 py-2.5 rounded transition-colors duration-200 cursor-pointer"
+            className="hidden md:flex items-center gap-2 bg-[#d4a800] hover:bg-[#b08800] text-[#2e4a6b] font-heading font-bold text-sm uppercase tracking-wide px-4 py-2.5 rounded transition-colors duration-200 cursor-pointer"
           >
             <Phone size={16} />
             <span>208-421-2123</span>
@@ -56,7 +56,7 @@ export function Navbar() {
           <div className="flex md:hidden items-center gap-3">
             <a
               href="tel:+12084212123"
-              className="flex items-center justify-center w-10 h-10 bg-[#f5c800] text-[#2e4a6b] rounded cursor-pointer"
+              className="flex items-center justify-center w-10 h-10 bg-[#d4a800] text-[#2e4a6b] rounded cursor-pointer"
               aria-label="Call us"
             >
               <Phone size={18} />
@@ -83,8 +83,8 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 className={`font-heading text-base font-semibold uppercase tracking-wider py-3 px-2 border-b border-[#3a5878] cursor-pointer transition-colors duration-200 ${
                   pathname === link.href
-                    ? "text-[#f5c800]"
-                    : "text-[#d4c9a8] hover:text-[#f5c800]"
+                    ? "text-[#d4a800]"
+                    : "text-[#d4c9a8] hover:text-[#d4a800]"
                 }`}
               >
                 {link.label}
@@ -92,7 +92,7 @@ export function Navbar() {
             ))}
             <a
               href="tel:+12084212123"
-              className="flex items-center gap-2 mt-3 bg-[#f5c800] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide px-4 py-3 rounded cursor-pointer"
+              className="flex items-center gap-2 mt-3 bg-[#d4a800] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide px-4 py-3 rounded cursor-pointer"
             >
               <Phone size={18} />
               <span>208-421-2123</span>

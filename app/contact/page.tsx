@@ -41,7 +41,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="bg-[#2e4a6b] py-14 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <p className="text-[#f5c800] font-heading uppercase tracking-widest text-sm mb-2">
+          <p className="text-[#d4a800] font-heading uppercase tracking-widest text-sm mb-2">
             Get In Touch
           </p>
           <h1 className="font-heading text-4xl sm:text-5xl font-bold mb-4">
@@ -68,7 +68,7 @@ export default function ContactPage() {
                   {contactInfo.map(({ icon: Icon, label, value, href }) => (
                     <div key={label} className="flex gap-4">
                       <div className="w-10 h-10 bg-[#2e4a6b] rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                        <Icon size={18} className="text-[#f5c800]" />
+                        <Icon size={18} className="text-[#d4a800]" />
                       </div>
                       <div>
                         <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-0.5">
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="tel:+12084212123"
-                  className="flex items-center justify-center gap-2 bg-[#f5c800] hover:bg-[#d4ac00] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide px-5 py-3 rounded transition-colors duration-200 cursor-pointer w-full"
+                  className="flex items-center justify-center gap-2 bg-[#d4a800] hover:bg-[#b08800] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide px-5 py-3 rounded transition-colors duration-200 cursor-pointer w-full"
                 >
                   <Phone size={16} />
                   Call 208-421-2123
@@ -130,7 +130,7 @@ export default function ContactPage() {
                       key={area}
                       className="flex items-center gap-1.5 text-xs text-slate-700"
                     >
-                      <div className="w-1.5 h-1.5 bg-[#f5c800] rounded-full shrink-0" />
+                      <div className="w-1.5 h-1.5 bg-[#d4a800] rounded-full shrink-0" />
                       {area}
                     </div>
                   ))}

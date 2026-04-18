@@ -14,16 +14,17 @@ import {
   MapPin,
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "All Wired Up Idaho | Electrical Contractor Wood River Valley",
+  title: "All Wired Up Idaho | Idaho Electrical Contractor",
 };
 
 const trustSignals = [
   { icon: Award, label: "26 Years in Business", sub: "Est. 1998" },
   { icon: Shield, label: "Licensed & Insured", sub: "Idaho State Licensed" },
   { icon: Zap, label: "Free Estimates", sub: "Call or fill out the form" },
-  { icon: MapPin, label: "Locally Based", sub: "Wood River Valley" },
+  { icon: MapPin, label: "Locally Based", sub: "Wood River & Magic Valley" },
 ];
 
 const services = [
@@ -31,14 +32,14 @@ const services = [
     icon: Home,
     title: "Custom Residential",
     description:
-      "Lutron-certified specialists for high-end custom homes — panel upgrades, full rewires, new construction, EV chargers, and smart lighting.",
+      "Lutron specialists for high-end custom homes — panel upgrades, full rewires, new construction, EV chargers, and smart lighting.",
     items: ["Lutron Smart Lighting", "Panel Upgrades", "New Construction Wiring", "EV Charger Install"],
   },
   {
     icon: Building,
     title: "Commercial",
     description:
-      "Reliable electrical solutions for businesses across Wood River Valley — on schedule, on budget.",
+      "Reliable electrical solutions for businesses across Idaho — on schedule, on budget.",
     items: ["Tenant Improvements", "New Construction", "Maintenance Contracts", "Lighting Systems"],
   },
   {
@@ -77,30 +78,30 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left: copy */}
             <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 bg-[#f5c800]/20 border border-[#f5c800]/40 text-[#f5c800] text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-[#d4a800]/20 border border-[#d4a800]/40 text-[#d4a800] text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
                 <Zap size={12} />
-                <span>Serving Wood River Valley Since 1998</span>
+                <span>Serving Idaho — Wood River &amp; Magic Valley</span>
               </div>
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-                Wood River Valley&apos;s<br />
-                <span className="text-[#f5c800]">Trusted Electricians</span>
+                Idaho&apos;s<br />
+                <span className="text-[#d4a800]">Trusted Electricians</span>
               </h1>
               <p className="text-[#d4c9a8] text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-                26 years of expert electrical work across Sun Valley, Ketchum,
-                Hailey, and Bellevue. Residential, commercial, and specialty
+                Expert electrical work across Idaho — serving Wood River Valley
+                and Magic Valley. Residential, commercial, and specialty
                 projects — done right, every time.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <a
                   href="tel:+12084212123"
-                  className="flex items-center justify-center gap-2 bg-[#f5c800] hover:bg-[#d4ac00] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide text-base px-6 py-4 rounded transition-colors duration-200 cursor-pointer"
+                  className="flex items-center justify-center gap-2 bg-[#d4a800] hover:bg-[#b08800] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide text-base px-6 py-4 rounded transition-colors duration-200 cursor-pointer"
                 >
                   <Phone size={20} />
                   Call 208-421-2123
                 </a>
                 <Link
                   href="/contact"
-                  className="flex items-center justify-center gap-2 border-2 border-[#d4c9a8] hover:border-[#f5c800] hover:text-[#f5c800] text-[#d4c9a8] font-heading font-bold uppercase tracking-wide text-base px-6 py-4 rounded transition-colors duration-200 cursor-pointer"
+                  className="flex items-center justify-center gap-2 border-2 border-[#d4c9a8] hover:border-[#d4a800] hover:text-[#d4a800] text-[#d4c9a8] font-heading font-bold uppercase tracking-wide text-base px-6 py-4 rounded transition-colors duration-200 cursor-pointer"
                 >
                   Get a Free Quote
                   <ChevronRight size={18} />
@@ -111,7 +112,7 @@ export default function HomePage() {
             {/* Right: logo on brand background card */}
             <div className="flex-shrink-0 flex items-center justify-center">
               <div className="bg-[#243d59] border border-[#3a5878] rounded-2xl p-8 shadow-xl">
-                <Logo variant="full" className="w-48 h-auto" />
+                <Logo variant="dark" className="w-48 h-auto" />
               </div>
             </div>
           </div>
@@ -119,13 +120,13 @@ export default function HomePage() {
       </section>
 
       {/* Trust bar */}
-      <section className="bg-[#f5c800]">
+      <section className="bg-[#d4a800]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {trustSignals.map(({ icon: Icon, label, sub }) => (
               <div key={label} className="flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-[#2e4a6b] rounded flex items-center justify-center">
-                  <Icon size={20} className="text-[#f5c800]" />
+                  <Icon size={20} className="text-[#d4a800]" />
                 </div>
                 <div>
                   <p className="font-heading font-bold text-[#2e4a6b] text-sm leading-tight">
@@ -148,7 +149,7 @@ export default function HomePage() {
             </h2>
             <p className="text-slate-600 max-w-xl mx-auto">
               Residential, commercial, and specialty electrical services — all
-              backed by 26 years of proven work right here in the valley.
+              backed by decades of proven work across Idaho.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -157,7 +158,7 @@ export default function HomePage() {
                 key={title}
                 className="border border-slate-200 rounded-xl p-6 hover:border-[#2e4a6b] hover:shadow-md transition-all duration-200 cursor-pointer group"
               >
-                <div className="w-12 h-12 bg-[#2e4a6b] rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#f5c800] transition-colors duration-200">
+                <div className="w-12 h-12 bg-[#2e4a6b] rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#d4a800] transition-colors duration-200">
                   <Icon
                     size={22}
                     className="text-[#d4c9a8] group-hover:text-[#2e4a6b] transition-colors duration-200"
@@ -175,7 +176,7 @@ export default function HomePage() {
                       key={item}
                       className="flex items-center gap-2 text-sm text-slate-700"
                     >
-                      <CheckCircle size={14} className="text-[#f5c800] shrink-0" />
+                      <CheckCircle size={14} className="text-[#d4a800] shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -201,11 +202,11 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-shrink-0">
               <div className="bg-[#2e4a6b] rounded-2xl p-8 text-center min-w-[220px]">
-                <p className="font-heading text-6xl font-bold text-[#f5c800]">26</p>
+                <p className="font-heading text-6xl font-bold text-[#d4a800]">26</p>
                 <p className="font-heading text-[#d4c9a8] text-lg uppercase tracking-wide">
                   Years
                 </p>
-                <p className="text-[#d4c9a8]/70 text-sm mt-1">in Wood River Valley</p>
+                <p className="text-[#d4c9a8]/70 text-sm mt-1">across Idaho</p>
                 <div className="mt-4 pt-4 border-t border-white/20">
                   <p className="text-[#d4c9a8] text-sm font-semibold">Est. 1998</p>
                 </div>
@@ -216,10 +217,9 @@ export default function HomePage() {
                 All Wired Up Idaho — Built on Results
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
-                Since 1998, All Wired Up Idaho has been the name neighbors,
-                contractors, and businesses in Wood River Valley call when they
-                need electrical work done right. No runaround, no guesswork —
-                just experienced hands and honest pricing.
+                All Wired Up Idaho serves Wood River Valley and Magic Valley
+                with the same standard: experienced hands, honest pricing, and
+                work done right. No runaround, no guesswork — just results.
               </p>
               <p className="text-slate-700 leading-relaxed mb-6">
                 We&apos;ve handled everything from single-outlet fixes in Bellevue to
@@ -228,12 +228,51 @@ export default function HomePage() {
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-[#2e4a6b] font-heading font-bold uppercase tracking-wide hover:text-[#f5c800] transition-colors duration-200 cursor-pointer"
+                className="inline-flex items-center gap-2 text-[#2e4a6b] font-heading font-bold uppercase tracking-wide hover:text-[#d4a800] transition-colors duration-200 cursor-pointer"
               >
                 About
                 <ChevronRight size={16} />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Work gallery */}
+      <section className="py-16 sm:py-20 bg-[#f0f4f8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <p className="text-[#d4a800] font-heading uppercase tracking-widest text-sm mb-2">
+              Real Jobs, Real Results
+            </p>
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#2e4a6b]">
+              Our Work
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { src: "/work-wiring.jpg", label: "New Construction Wiring" },
+              { src: "/work-panel-roughin.jpg", label: "Dual Panel Rough-In" },
+              { src: "/work-panel-wired.jpg", label: "Panel Installation" },
+              { src: "/work-lutron.jpg", label: "Lutron Smart Lighting System" },
+              { src: "/work-outdoor.jpg", label: "Outdoor Service Installation" },
+            ].map(({ src, label }) => (
+              <div key={src} className="relative overflow-hidden rounded-xl aspect-[3/4] group">
+                <Image
+                  src={src}
+                  alt={label}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a2f45]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white font-heading font-bold text-sm uppercase tracking-wide">
+                    {label}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -254,7 +293,7 @@ export default function HomePage() {
               >
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} className="fill-[#f5c800] text-[#f5c800]" />
+                    <Star key={i} size={16} className="fill-[#d4a800] text-[#d4a800]" />
                   ))}
                 </div>
                 <p className="text-slate-700 text-sm leading-relaxed mb-4">
@@ -273,7 +312,7 @@ export default function HomePage() {
       {/* CTA bar */}
       <section className="bg-[#2e4a6b] py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <Clock size={32} className="text-[#f5c800] mx-auto mb-4" />
+          <Clock size={32} className="text-[#d4a800] mx-auto mb-4" />
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-3">
             Ready to Get Started?
           </h2>
@@ -284,14 +323,14 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="tel:+12084212123"
-              className="flex items-center justify-center gap-2 bg-[#f5c800] hover:bg-[#d4ac00] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide text-base px-8 py-4 rounded transition-colors duration-200 cursor-pointer"
+              className="flex items-center justify-center gap-2 bg-[#d4a800] hover:bg-[#b08800] text-[#2e4a6b] font-heading font-bold uppercase tracking-wide text-base px-8 py-4 rounded transition-colors duration-200 cursor-pointer"
             >
               <Phone size={20} />
               208-421-2123
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-[#d4c9a8] hover:border-[#f5c800] hover:text-[#f5c800] text-[#d4c9a8] font-heading font-bold uppercase tracking-wide text-base px-8 py-4 rounded transition-colors duration-200 cursor-pointer"
+              className="flex items-center justify-center gap-2 border-2 border-[#d4c9a8] hover:border-[#d4a800] hover:text-[#d4a800] text-[#d4c9a8] font-heading font-bold uppercase tracking-wide text-base px-8 py-4 rounded transition-colors duration-200 cursor-pointer"
             >
               Request a Quote
             </Link>

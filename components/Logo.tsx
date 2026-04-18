@@ -1,31 +1,31 @@
 import Image from "next/image";
 
 interface LogoProps {
-  variant?: "nav" | "full";
+  variant?: "dark" | "light";
   className?: string;
 }
 
-export function Logo({ variant = "nav", className = "" }: LogoProps) {
-  if (variant === "full") {
+export function Logo({ variant = "dark", className = "" }: LogoProps) {
+  if (variant === "light") {
     return (
       <Image
-        src="/logo.jpg"
+        src="/logo.png"
         alt="All Wired Up Idaho"
-        width={950}
-        height={1685}
+        width={1838}
+        height={2580}
         className={className}
         priority
       />
     );
   }
 
-  // nav: landscape crop showing "ALL WIRED UP IDAHO" + lower Idaho outline
+  // dark: cream-colored logo for use on brand blue backgrounds
   return (
     <Image
-      src="/logo-nav.jpg"
+      src="/logo-cream.png"
       alt="All Wired Up Idaho"
-      width={950}
-      height={809}
+      width={1838}
+      height={2580}
       className={className}
       priority
     />
